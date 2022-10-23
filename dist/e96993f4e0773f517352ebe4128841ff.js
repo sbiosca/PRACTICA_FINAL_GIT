@@ -68,7 +68,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({15:[function(require,module,exports) {
+})({7:[function(require,module,exports) {
 
 },{}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
@@ -88,7 +88,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:54898/');
+  var ws = new WebSocket('ws://localhost:61181/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -189,4 +189,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,15])
+},{}]},{},[0,7])
