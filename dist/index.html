@@ -34,11 +34,16 @@
             bottom: 0;
             width: 94%;
             background-color: aquamarine;}
-    section {border: 1px solid black;
+
+    table {border: 1px solid black;
             padding: 2%;
-            margin: 1%;}
+            margin: 1%;
+            display: block;
+            border-collapse: collapse;}
     article {padding: 2%;
-            text-align: center;}
+            text-align: center;
+            }
+
   </style>
 </head>
 
@@ -48,7 +53,16 @@
   </header>
   <!-- Add your site or application content here -->
   <section>
-    <main>HOME</main>
+
+    <table>
+      <tr>
+        <td style="position: relative; left: 10%;">HOME</td>
+        <td style="position: relative; left: 80%;">
+          <span id="html" onclick="document.getElementById('html').innerHTML = 'HTML MODIFICADO!'">Modificar contenido HTML</span>
+        </td>
+      </tr>
+    </table>
+
   </section>
   
   <article>
