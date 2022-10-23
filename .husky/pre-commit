@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# #npm test
+
+# echo ls ./.git/refs/heads/
+# if git diff --staged || grep '+' | grep -E '(A corregir por:)';
+# then
+#    echo "El commit es correcto"
+
+# elif git diff --staged || grep '+' | grep -E '()' | $branch==hotfix ;
+# then 
+#     echo "No se puede realizar el commit."
+#     echo "El commit debe contener: 'A corregir por: …'"
+# fi
+# exit
